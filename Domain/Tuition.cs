@@ -1,6 +1,8 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace Domain;
 
-public class Tuition
+public class Tuition : BaseEntity
 {
     public int IdTuition {get;set;}
     public string IdPersonFk {get;set;}

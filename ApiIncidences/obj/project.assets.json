@@ -55,7 +55,7 @@
       "Humanizer.Core/2.14.1": {
         "type": "package",
         "compile": {
-          "lib/net6.0/Humanizer.dll": {
+          "lib/net6.0/_._": {
             "related": ".xml"
           }
         },
@@ -308,7 +308,7 @@
           "Mono.TextTemplating": "2.2.1"
         },
         "compile": {
-          "lib/net6.0/Microsoft.EntityFrameworkCore.Design.dll": {
+          "lib/net6.0/_._": {
             "related": ".xml"
           }
         },
@@ -698,7 +698,7 @@
           "System.CodeDom": "4.4.0"
         },
         "compile": {
-          "lib/netstandard2.0/Mono.TextTemplating.dll": {}
+          "lib/netstandard2.0/_._": {}
         },
         "runtime": {
           "lib/netstandard2.0/Mono.TextTemplating.dll": {}
@@ -972,7 +972,7 @@
       "System.CodeDom/4.4.0": {
         "type": "package",
         "compile": {
-          "ref/netstandard2.0/System.CodeDom.dll": {
+          "ref/netstandard2.0/_._": {
             "related": ".xml"
           }
         },
@@ -1798,7 +1798,7 @@
           "lib/netstandard1.3/System.Xml.XmlDocument.dll": {}
         }
       },
-      "aplication/1.0.0": {
+      "Aplication/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
@@ -1806,10 +1806,10 @@
           "Persistence": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/aplication.dll": {}
+          "bin/placeholder/Aplication.dll": {}
         },
         "runtime": {
-          "bin/placeholder/aplication.dll": {}
+          "bin/placeholder/Aplication.dll": {}
         }
       },
       "Domain/1.0.0": {
@@ -1830,6 +1830,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore": "7.0.9",
           "Pomelo.EntityFrameworkCore.MySql": "7.0.0"
         },
@@ -5853,10 +5854,10 @@
         "system.xml.xmldocument.nuspec"
       ]
     },
-    "aplication/1.0.0": {
+    "Aplication/1.0.0": {
       "type": "project",
-      "path": "../aplication/aplication.csproj",
-      "msbuildProject": "../aplication/aplication.csproj"
+      "path": "../Aplication/Aplication.csproj",
+      "msbuildProject": "../Aplication/Aplication.csproj"
     },
     "Domain/1.0.0": {
       "type": "project",
@@ -5871,28 +5872,28 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "Domain >= 1.0.0",
+      "Aplication >= 1.0.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 7.0.9",
       "Microsoft.AspNetCore.OpenApi >= 7.0.8",
+      "Microsoft.EntityFrameworkCore >= 7.0.10",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.10",
-      "Swashbuckle.AspNetCore >= 6.5.0",
-      "aplication >= 1.0.0"
+      "Swashbuckle.AspNetCore >= 6.5.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Camilo Hernandez\\.nuget\\packages\\": {}
+    "/home/apolM01-042/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\Camilo Hernandez\\Documents\\Campus\\NetCore\\Incidences-app\\ApiIncidences\\ApiIncidences.csproj",
+      "projectUniqueName": "/home/apolM01-042/Documents/NetCore/Incidences-app/ApiIncidences/ApiIncidences.csproj",
       "projectName": "ApiIncidences",
-      "projectPath": "c:\\Users\\Camilo Hernandez\\Documents\\Campus\\NetCore\\Incidences-app\\ApiIncidences\\ApiIncidences.csproj",
-      "packagesPath": "C:\\Users\\Camilo Hernandez\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\Camilo Hernandez\\Documents\\Campus\\NetCore\\Incidences-app\\ApiIncidences\\obj\\",
+      "projectPath": "/home/apolM01-042/Documents/NetCore/Incidences-app/ApiIncidences/ApiIncidences.csproj",
+      "packagesPath": "/home/apolM01-042/.nuget/packages/",
+      "outputPath": "/home/apolM01-042/Documents/NetCore/Incidences-app/ApiIncidences/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Camilo Hernandez\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/home/apolM01-042/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -5904,11 +5905,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "c:\\Users\\Camilo Hernandez\\Documents\\Campus\\NetCore\\Incidences-app\\aplication\\aplication.csproj": {
-              "projectPath": "c:\\Users\\Camilo Hernandez\\Documents\\Campus\\NetCore\\Incidences-app\\aplication\\aplication.csproj"
-            },
-            "c:\\Users\\Camilo Hernandez\\Documents\\Campus\\NetCore\\Incidences-app\\Domain\\Domain.csproj": {
-              "projectPath": "c:\\Users\\Camilo Hernandez\\Documents\\Campus\\NetCore\\Incidences-app\\Domain\\Domain.csproj"
+            "/home/apolM01-042/Documents/NetCore/Incidences-app/Aplication/Aplication.csproj": {
+              "projectPath": "/home/apolM01-042/Documents/NetCore/Incidences-app/Aplication/Aplication.csproj"
             }
           }
         }
@@ -5930,6 +5928,10 @@
           "Microsoft.AspNetCore.OpenApi": {
             "target": "Package",
             "version": "[7.0.8, )"
+          },
+          "Microsoft.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[7.0.10, )"
           },
           "Microsoft.EntityFrameworkCore.Design": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -5961,7 +5963,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.305\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.110/RuntimeIdentifierGraph.json"
       }
     }
   }
